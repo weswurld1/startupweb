@@ -157,13 +157,13 @@ export default function Home() {
             <div className="grid" role="list">
               <article className="card fade-up delay-1" role="listitem">
                 <h3>Starter</h3>
-                <div className="price" aria-label="Price: $499">$499</div>
+                <div className="price" aria-label="Price: $300">$300</div>
                 <p>Single-page website</p>
               </article>
 
               <article className="card fade-up delay-2" role="listitem">
                 <h3>Business</h3>
-                <div className="price" aria-label="Price: $999">$999</div>
+                <div className="price" aria-label="Price: $850">$850</div>
                 <p>Multi-page website</p>
               </article>
 
