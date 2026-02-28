@@ -1,4 +1,4 @@
-import { SiVercel, SiSupabase, SiHtml5, SiJavascript, SiCss3 } from "react-icons/si";
+import { SiVercel, SiSupabase, SiHtml5, SiJavascript, SiCss3, SiPython } from "react-icons/si";
 
 export default function Home() {
   return (
