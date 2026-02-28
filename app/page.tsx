@@ -89,6 +89,15 @@ export default function Home() {
                 />
                 <span>CSS</span>
               </article>
+
+              <article className="tech-card" role="listitem">
+  <SiPython
+    aria-hidden="true"
+    className="tech-icon"
+    style={{ color: "#3776AB" }}
+  />
+  <span>Python</span>
+</article>
             </div>
           </div>
         </section>
