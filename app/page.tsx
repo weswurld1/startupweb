@@ -105,6 +105,8 @@ export default function Home() {
             </p>
 
             <div className="grid" role="list">
+
+              {/* PROJECT 1 */}
               <article className="card fade-up delay-1" role="listitem">
                 <img
                   src="https://api.microlink.io/?url=https://solercrc.com&screenshot=true&meta=false&embed=screenshot.url"
@@ -124,21 +126,46 @@ export default function Home() {
                 </a>
               </article>
 
+              {/* PROJECT 2 */}
               <article className="card fade-up delay-2" role="listitem">
-                <div className="card-screenshot" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  <span style={{ color: "var(--color-text-subtle)", fontSize: "13px" }}>Coming soon</span>
-                </div>
-                <h3>Project Two</h3>
-                <p>Coming soon</p>
+                <img
+                  src="https://api.microlink.io/?url=https://awkwardselfconciousness-bpak.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                  alt="Awkward Self Consciousness website screenshot"
+                  className="card-screenshot"
+                />
+                <h3>Awkward Self Consciousness</h3>
+                <p>Clothing brand — website &amp; development</p>
+                <a
+                  href="https://awkwardselfconciousness-bpak.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-link"
+                  aria-label="View Awkward Self Consciousness website"
+                >
+                  View project →
+                </a>
               </article>
 
+              {/* PROJECT 3 */}
               <article className="card fade-up delay-3" role="listitem">
-                <div className="card-screenshot" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                  <span style={{ color: "var(--color-text-subtle)", fontSize: "13px" }}>Coming soon</span>
-                </div>
-                <h3>Project Three</h3>
-                <p>Coming soon</p>
+                <img
+                  src="https://api.microlink.io/?url=https://vitalcare-psi.vercel.app&screenshot=true&meta=false&embed=screenshot.url"
+                  alt="VitalCare CR website screenshot"
+                  className="card-screenshot"
+                />
+                <h3>VitalCare CR</h3>
+                <p>Patient care service — website &amp; branding</p>
+                <a
+                  href="https://vitalcare-psi.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-link"
+                  aria-label="View VitalCare CR website"
+                >
+                  View project →
+                </a>
               </article>
+
             </div>
           </div>
         </section>
