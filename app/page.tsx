@@ -30,7 +30,7 @@ export default function Home() {
           <div className="container fade-up">
             <h1 id="hero-title">
               We build websites<br />
-              that <em>grow</em> your<br />
+              that <em>expand</em> your<br />
               business.
             </h1>
             <p>
