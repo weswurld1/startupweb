@@ -106,18 +106,38 @@ export default function Home() {
 
             <div className="grid" role="list">
               <article className="card fade-up delay-1" role="listitem">
-                <h3>Project One</h3>
-                <p>Landing page &amp; branding</p>
+                <img
+                  src="https://api.microlink.io/?url=https://solercrc.com&screenshot=true&meta=false&embed=screenshot.url"
+                  alt="Soler CRC website screenshot"
+                  className="card-screenshot"
+                />
+                <h3>Soler CRC</h3>
+                <p>Solar energy company — website &amp; branding</p>
+                <a
+                  href="https://solercrc.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-link"
+                  aria-label="View Soler CRC website"
+                >
+                  View project →
+                </a>
               </article>
 
               <article className="card fade-up delay-2" role="listitem">
+                <div className="card-screenshot" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <span style={{ color: "var(--color-text-subtle)", fontSize: "13px" }}>Coming soon</span>
+                </div>
                 <h3>Project Two</h3>
-                <p>Business website</p>
+                <p>Coming soon</p>
               </article>
 
               <article className="card fade-up delay-3" role="listitem">
+                <div className="card-screenshot" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  <span style={{ color: "var(--color-text-subtle)", fontSize: "13px" }}>Coming soon</span>
+                </div>
                 <h3>Project Three</h3>
-                <p>Web app UI</p>
+                <p>Coming soon</p>
               </article>
             </div>
           </div>
