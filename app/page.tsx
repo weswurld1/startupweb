@@ -97,3 +97,36 @@ export default function Home() {
     </>
   )
 }
+</section>
+  <section className="tech-stack">
+  <div className="container">
+    <h2>Technologies we work with</h2>
+
+    <div className="tech-grid">
+      <div className="tech-card">
+        ⚡
+        <span>Vercel</span>
+      </div>
+
+      <div className="tech-card">
+        🟢
+        <span>Supabase</span>
+      </div>
+
+      <div className="tech-card">
+        📄
+        <span>HTML</span>
+      </div>
+
+      <div className="tech-card">
+        ✨
+        <span>JavaScript</span>
+      </div>
+
+      <div className="tech-card">
+        🎨
+        <span>CSS</span>
+      </div>
+    </div>
+  </div>
+</section>
