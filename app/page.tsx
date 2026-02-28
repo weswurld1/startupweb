@@ -29,12 +29,13 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-title">
           <div className="container fade-up">
             <h1 id="hero-title">
-              We design &amp; build
-              <br />
-              modern websites
+              We build websites<br />
+              that <em>grow</em> your<br />
+              business.
             </h1>
             <p>
-              High-performance web design for brands that want to stand out online.
+              Premium web design for local and international brands
+              that want to stand out and convert online.
             </p>
             <a href="#contact" className="button">
               Start a project
@@ -95,6 +96,7 @@ export default function Home() {
         {/* PORTFOLIO */}
         <section id="work" aria-labelledby="work-title">
           <div className="container">
+            <span className="section-label fade-up">Our Work</span>
             <h2 id="work-title" className="section-title fade-up">
               Selected Work
             </h2>
@@ -124,11 +126,12 @@ export default function Home() {
         {/* PRICING */}
         <section id="pricing" aria-labelledby="pricing-title">
           <div className="container">
+            <span className="section-label fade-up">Pricing</span>
             <h2 id="pricing-title" className="section-title fade-up">
-              Pricing
+              Simple, transparent pricing.
             </h2>
             <p className="section-subtitle fade-up delay-1">
-              Simple packages. Transparent pricing.
+              No surprises. Pick the package that fits your needs.
             </p>
 
             <div className="grid" role="list">
@@ -160,11 +163,12 @@ export default function Home() {
       {/* FOOTER / CONTACT */}
       <footer id="contact" aria-labelledby="contact-title">
         <div className="container fade-up">
+          <span className="section-label">Contact</span>
           <h2 id="contact-title" className="section-title">
-            Let&apos;s work together
+            Let&apos;s work together.
           </h2>
           <p className="section-subtitle">
-            Tell us about your project and we&apos;ll get back to you.
+            Tell us about your project and we&apos;ll get back to you within 24 hours.
           </p>
 
           <a
