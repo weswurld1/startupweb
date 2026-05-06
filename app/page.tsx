@@ -82,7 +82,7 @@ export default function Home() {
               </article>
 
               <article className="tech-card" role="listitem">
-                <SiCss3
+                <SiCss
                   aria-hidden="true"
                   className="tech-icon"
                   style={{ color: "#1572B6" }}
