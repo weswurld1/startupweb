@@ -11,8 +11,8 @@ export default function Home() {
       {/* NAV */}
       <nav className="nav" role="navigation" aria-label="Main navigation">
         <div className="container nav-inner">
-          <a href="/" className="logo" aria-label="Studio home">
-            STUDIO
+          <a href="/" className="logo" aria-label="ByteClub Dev home">
+            ByteClub Dev
           </a>
           <div className="nav-links">
             <a href="#work">Work</a>
@@ -236,7 +236,7 @@ export default function Home() {
           </a>
 
           <p className="footer-copy">
-            &copy; {new Date().getFullYear()} Studio. All rights reserved.
+            &copy; {new Date().getFullYear()} ByteClub Dev. All rights reserved.
           </p>
         </div>
       </footer>
