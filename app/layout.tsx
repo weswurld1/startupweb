@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Studio — Web Design & Development',
+  title: 'ByteClub Dev — Web Design & Development',
   description: 'Modern websites for modern brands',
 }
 
