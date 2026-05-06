@@ -12,9 +12,9 @@
   --color-border-hover: rgba(240, 237, 232, 0.15);
 
   /* Accent: Gold */
-  --color-accent: #c9a84c;
-  --color-accent-dim: rgba(201, 168, 76, 0.1);
-  --color-accent-glow: rgba(201, 168, 76, 0.2);
+  --color-accent: #A6FF8C;
+  --color-accent-dim: rgba(166, 255, 140, 0.1);
+  --color-accent-glow: rgba(166, 255, 140, 0.2);
 
   --nav-height: 72px;
   --max-width: 1200px;
