@@ -11,7 +11,7 @@ export default function Home() {
       {/* NAV */}
       <nav className="nav" role="navigation" aria-label="Main navigation">
         <div className="container nav-inner">
-          <a href="/" className="logo" aria-label="ByteClub Dev home">
+          <a href="/" className="logo" aria-label="ByteClub Dev home" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
             <img
               src="/logo.png"
               alt="ByteClub Dev"
