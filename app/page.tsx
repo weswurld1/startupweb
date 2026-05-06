@@ -12,6 +12,11 @@ export default function Home() {
       <nav className="nav" role="navigation" aria-label="Main navigation">
         <div className="container nav-inner">
           <a href="/" className="logo" aria-label="ByteClub Dev home">
+            <img
+              src="/logo.png"
+              alt="ByteClub Dev"
+              style={{ height: ""36px", width: "auto" }}
+            />
             ByteClub Dev
           </a>
           <div className="nav-links">
