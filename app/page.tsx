@@ -15,7 +15,7 @@ export default function Home() {
             <img
               src="/logo.png"
               alt="ByteClub Dev"
-              style={{ height: ""36px", width: "auto" }}
+              style={{ height: "36px", width: "auto" }}
             />
             ByteClub Dev
           </a>
