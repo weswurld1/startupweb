@@ -38,7 +38,6 @@ export default function Home() {
             ByteClub Dev
           </a>
 
-          {/* HAMBURGER BUTTON */}
           <button
             className="hamburger"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -50,7 +49,6 @@ export default function Home() {
             <span className={`hamburger-line ${menuOpen ? "open" : ""}`} />
           </button>
 
-          {/* NAV LINKS */}
           <div className={`nav-links ${menuOpen ? "nav-open" : ""}`}>
             <button
               onClick={() =>
@@ -97,6 +95,63 @@ export default function Home() {
             <a href="#contact" className="button">
               {t("hero.cta")}
             </a>
+          </div>
+        </section>
+
+        {/* ── SERVICES SECTION ── */}
+        <section className="services" aria-labelledby="services-title">
+          <div className="container">
+            <span className="section-label FadeUp">{t("services.label")}</span>
+            <div className="services-layout">
+              <div className="services-intro FadeUp">
+                <h2 id="services-title" className="section-title">
+                  {t("services.title")}
+                </h2>
+                <p className="section-subtitle" style={{ marginBottom: 0 }}>
+                  {t("services.subtitle")}
+                </p>
+              </div>
+              <div className="services-grid" role="list">
+                <article className="service-card FadeUp delay-1" role="listitem">
+                  <div className="service-card-top">
+                    <span className="service-number">01</span>
+                    <div className="service-icon-wrap" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="service-name">{t("services.web.name")}</h3>
+                  <p className="service-desc">{t("services.web.desc")}</p>
+                </article>
+
+                <article className="service-card FadeUp delay-2" role="listitem">
+                  <div className="service-card-top">
+                    <span className="service-number">02</span>
+                    <div className="service-icon-wrap" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="service-name">{t("services.branding.name")}</h3>
+                  <p className="service-desc">{t("services.branding.desc")}</p>
+                </article>
+
+                <article className="service-card FadeUp delay-3" role="listitem">
+                  <div className="service-card-top">
+                    <span className="service-number">03</span>
+                    <div className="service-icon-wrap" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <h3 className="service-name">{t("services.marketing.name")}</h3>
+                  <p className="service-desc">{t("services.marketing.desc")}</p>
+                </article>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -178,6 +233,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section id="pricing" aria-labelledby="pricing-title">
           <div className="container">
             <span className="section-label FadeUp">{t("pricing.label")}</span>
