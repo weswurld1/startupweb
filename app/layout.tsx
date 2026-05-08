@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "ByteClub Dev",
     images: [
       {
-        url: "/og-image.png", // 1200×630px
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "ByteClub Dev — Web Design & Development",
@@ -76,7 +76,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Favicon moderno — Next.js los toma de /app/icon.png automáticamente,
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              name: "ByteClub Dev",
+              url: "https://byteclubdev.com",
+              description:
+                "Web design and development studio building modern websites for ambitious brands.",
+              serviceType: "Web Design & Development",
+              areaServed: ["Costa Rica", "International"],
+              priceRange: "$300 - Custom",
+              contactPoint: {
+                "@type": "ContactPoint",
+                email: "byteclubcr@gmail.com",
+                contactType: "customer service",
+              },
+            }),
+          }}
+        />
+        {/* Favicon moderno —  de /app/icon.png automáticamente,
          */}
         {/* <link rel="icon" href="/favicon.ico" sizes="any" /> */}
         {/* <link rel="icon" href="/icon.svg" type="image/svg+xml" /> */}
