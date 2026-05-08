@@ -10,6 +10,24 @@ const en = {
         "Premium digital solutions for local and international brands that want to stand out and convert online.",
       cta: "Start a project",
     },
+    services: {
+  label: "What We Do",
+  title: "More than websites —\nend-to-end digital growth.",
+  subtitle:
+    "We partner with brands from strategy to execution. Whether you need a site, a new identity, or a full go-to-market push — we handle it.",
+  web: {
+    name: "Web design & development",
+    desc: "Fast, modern websites and apps built to convert — from single-page launches to full custom platforms.",
+  },
+  branding: {
+    name: "Rebranding & identity",
+    desc: "Logos, visual systems, and brand guidelines that make your business look as good as it performs.",
+  },
+  marketing: {
+    name: "Marketing & strategy",
+    desc: "From content and SEO to paid campaigns — we help you reach the right audience and grow online.",
+  },
+},
     tech: { title: "Technologies we work with" },
     work: {
       label: "Our Work",
