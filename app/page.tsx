@@ -1,5 +1,6 @@
 "use client";
 import Image from 'next/image'
+import FadeUp from '@/app/components/FadeUp'
 import ContactForm from "@/app/components/ContactForm";
 import { useState } from "react";
 import "@/i18n";
@@ -86,7 +87,7 @@ export default function Home() {
 
       <main id="main-content">
         <section className="hero" aria-labelledby="hero-title">
-          <div className="container fade-up">
+          <div className="container FadeUp">
             <h1 id="hero-title">
               {t("hero.title")}
               <br />
@@ -101,15 +102,15 @@ export default function Home() {
 
         <section id="work" aria-labelledby="work-title">
           <div className="container">
-            <span className="section-label fade-up">{t("work.label")}</span>
-            <h2 id="work-title" className="section-title fade-up">
+            <span className="section-label FadeUp">{t("work.label")}</span>
+            <h2 id="work-title" className="section-title FadeUp">
               {t("work.title")}
             </h2>
-            <p className="section-subtitle fade-up delay-1">
+            <p className="section-subtitle FadeUp delay-1">
               {t("work.subtitle")}
             </p>
             <div className="grid" role="list">
-              <article className="card fade-up delay-1" role="listitem">
+              <article className="card FadeUp delay-1" role="listitem">
                 <Image
                   src="https://api.microlink.io/?url=https://solercrc.com&screenshot=true&meta=false&embed=screenshot.url"
                   alt="Soler CRC website screenshot"
@@ -131,7 +132,7 @@ export default function Home() {
                 </a>
               </article>
 
-              <article className="card fade-up delay-2" role="listitem">
+              <article className="card FadeUp delay-2" role="listitem">
                 <Image
                   src="https://api.microlink.io/?url=https://awkwardself-consciousness.com&screenshot=true&meta=false&embed=screenshot.url"
                   alt="Awkward Self Consciousness website screenshot"
@@ -153,7 +154,7 @@ export default function Home() {
                 </a>
               </article>
 
-              <article className="card fade-up delay-3" role="listitem">
+              <article className="card FadeUp delay-3" role="listitem">
                 <Image
                   src="https://api.microlink.io/?url=https://vitalcarecr.com&screenshot=true&meta=false&embed=screenshot.url"
                   alt="VitalCare CR website screenshot"
@@ -179,25 +180,25 @@ export default function Home() {
         </section>
         <section id="pricing" aria-labelledby="pricing-title">
           <div className="container">
-            <span className="section-label fade-up">{t("pricing.label")}</span>
-            <h2 id="pricing-title" className="section-title fade-up">
+            <span className="section-label FadeUp">{t("pricing.label")}</span>
+            <h2 id="pricing-title" className="section-title FadeUp">
               {t("pricing.title")}
             </h2>
-            <p className="section-subtitle fade-up delay-1">
+            <p className="section-subtitle FadeUp delay-1">
               {t("pricing.subtitle")}
             </p>
             <div className="grid" role="list">
-              <article className="card fade-up delay-1" role="listitem">
+              <article className="card FadeUp delay-1" role="listitem">
                 <h3>{t("pricing.starter.name")}</h3>
                 <div className="price">$300</div>
                 <p>{t("pricing.starterDesc")}</p>
               </article>
-              <article className="card fade-up delay-2" role="listitem">
+              <article className="card FadeUp delay-2" role="listitem">
                 <h3>{t("pricing.business.name")}</h3>
                 <div className="price">$850</div>
                 <p>{t("pricing.businessDesc")}</p>
               </article>
-              <article className="card fade-up delay-3" role="listitem">
+              <article className="card FadeUp delay-3" role="listitem">
                 <h3>{t("pricing.custom.name")}</h3>
                 <div className="price">{t("pricing.customPrice")}</div>
                 <p>{t("pricing.customDesc")}</p>
@@ -260,7 +261,7 @@ export default function Home() {
       </main>
 
       <footer id="contact" aria-labelledby="contact-title">
-        <div className="container fade-up">
+        <div className="container FadeUp">
           <span className="section-label">{t("contact.label")}</span>
           <h2 id="contact-title" className="section-title">
             {t("contact.title")}
