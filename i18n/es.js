@@ -10,6 +10,24 @@ const es = {
         "Soluciones digitales premium para marcas locales e internacionales que quieren destacar y convertir en línea.",
       cta: "Iniciar proyecto",
     },
+    services: {
+  label: "Lo que hacemos",
+  title: "Más que sitios web —\ncrecimiento digital integral.",
+  subtitle:
+    "Acompañamos a las marcas desde la estrategia hasta la ejecución. Ya sea que necesites un sitio, una nueva identidad o un lanzamiento completo — nosotros lo manejamos.",
+  web: {
+    name: "Diseño y desarrollo web",
+    desc: "Sitios web y aplicaciones rápidas y modernas diseñadas para convertir — desde lanzamientos de una página hasta plataformas personalizadas.",
+  },
+  branding: {
+    name: "Rebranding e identidad",
+    desc: "Logos, sistemas visuales y guías de marca que hacen que tu negocio se vea tan bien como funciona.",
+  },
+  marketing: {
+    name: "Marketing y estrategia",
+    desc: "Desde contenido y SEO hasta campañas pagadas — te ayudamos a llegar a la audiencia correcta y crecer en línea.",
+  },
+},
     tech: { title: "Tecnologías con las que trabajamos" },
     work: {
       label: "Nuestro trabajo",
