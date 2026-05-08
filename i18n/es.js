@@ -6,14 +6,16 @@ const es = {
       title: "Construimos soluciones digitales que",
       emphasis: "expanden",
       title2: "tu negocio.",
-      subtitle: "Soluciones digitales premium para marcas locales e internacionales que quieren destacar y convertir en línea.",
+      subtitle:
+        "Soluciones digitales premium para marcas locales e internacionales que quieren destacar y convertir en línea.",
       cta: "Iniciar proyecto",
     },
     tech: { title: "Tecnologías con las que trabajamos" },
     work: {
       label: "Nuestro trabajo",
       title: "Proyectos seleccionados",
-      subtitle: "Algunos ejemplos de sitios web y productos que hemos construido.",
+      subtitle:
+        "Algunos ejemplos de sitios web y productos que hemos construido.",
       viewProject: "Ver proyecto →",
       soler: "Empresa de energía solar — sitio web y branding",
       awkward: "Marca de ropa — sitio web y desarrollo",
@@ -25,7 +27,8 @@ const es = {
       custom: { name: "Custom" },
       label: "Precios",
       title: "Precios simples y transparentes.",
-      subtitle: "Sin sorpresas. Elige el paquete que se adapta a tus necesidades.",
+      subtitle:
+        "Sin sorpresas. Elige el paquete que se adapta a tus necesidades.",
       starterDesc: "Sitio de una página",
       businessDesc: "Sitio multipágina",
       customDesc: "Solución a medida",
@@ -34,11 +37,26 @@ const es = {
     contact: {
       label: "Contacto",
       title: "Trabajemos juntos.",
-      subtitle: "Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas.",
+      subtitle:
+        "Cuéntanos sobre tu proyecto y te responderemos en menos de 24 horas.",
       cta: "Contáctanos",
       copy: "Todos los derechos reservados.",
     },
-  }
-}
+    form: {
+      name: "Nombre",
+      namePlaceholder: "Juan Pérez",
+      email: "Email",
+      emailPlaceholder: "juan@ejemplo.com",
+      service: "Servicio",
+      servicePlaceholder: "Selecciona un servicio",
+      message: "Mensaje",
+      messagePlaceholder: "Cuéntanos sobre tu proyecto...",
+      submit: "Enviar mensaje",
+      sending: "Enviando...",
+      success: "¡Mensaje enviado! Te respondemos en menos de 24 horas.",
+      error: "Algo salió mal. Por favor intenta de nuevo.",
+    },
+  },
+};
 
-export default es
+export default es;

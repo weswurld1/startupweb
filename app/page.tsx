@@ -1,48 +1,62 @@
 "use client"
 
-
+import ContactForm from '@/app/components/ContactForm'
+import { useState } from 'react'
 import '@/i18n'
 import { useTranslation } from 'react-i18next'
 import { SiVercel, SiSupabase, SiHtml5, SiJavascript, SiCss, SiPython } from "react-icons/si"
 
 export default function Home() {
   const { t, i18n } = useTranslation()
-
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <>
       <a href="#main-content" className="skip-link">
         {t('skip')}
       </a>
+<nav className="nav" role="navigation" aria-label="Main navigation">
+  <div className="container nav-inner">
+    <a href="/" className="logo" aria-label="ByteClub Dev home" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+      <img src="/logo.png" alt="ByteClub Dev" style={{ height: "36px", width: "auto" }} />
+      ByteClub Dev
+    </a>
 
-      <nav className="nav" role="navigation" aria-label="Main navigation">
-        <div className="container nav-inner">
-          <a href="/" className="logo" aria-label="ByteClub Dev home" style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <img src="/logo.png" alt="ByteClub Dev" style={{ height: "36px", width: "auto" }} />
-            ByteClub Dev
-          </a>
-          <div className="nav-links">
-            <button
-              onClick={() => i18n.changeLanguage(i18n.resolvedLanguage === 'en' ? 'es' : 'en')}
-              style={{
-                background: 'none',
-                border: '1px solid var(--color-border)',
-                color: 'var(--color-text-muted)',
-                borderRadius: '6px',
-                padding: '4px 10px',
-                cursor: 'pointer',
-                fontSize: '13px',
-                fontWeight: 600,
-                letterSpacing: '0.04em',
-              }}
-            >
-              {i18n.resolvedLanguage === 'en' ? 'ES' : 'EN'}
-            </button>
-            <a href="#work">{t('nav.work')}</a>
-            <a href="#pricing">{t('nav.pricing')}</a>
-            <a href="#contact">{t('nav.contact')}</a>
-          </div>
-        </div>
-      </nav>
+    {/* HAMBURGER BUTTON */}
+    <button
+      className="hamburger"
+      onClick={() => setMenuOpen(!menuOpen)}
+      aria-label="Toggle menu"
+      aria-expanded={menuOpen}
+    >
+      <span className={`hamburger-line ${menuOpen ? 'open' : ''}`} />
+      <span className={`hamburger-line ${menuOpen ? 'open' : ''}`} />
+      <span className={`hamburger-line ${menuOpen ? 'open' : ''}`} />
+    </button>
+
+    {/* NAV LINKS */}
+    <div className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
+      <button
+        onClick={() => i18n.changeLanguage(i18n.resolvedLanguage === 'en' ? 'es' : 'en')}
+        style={{
+          background: 'none',
+          border: '1px solid var(--color-border)',
+          color: 'var(--color-text-muted)',
+          borderRadius: '6px',
+          padding: '4px 10px',
+          cursor: 'pointer',
+          fontSize: '13px',
+          fontWeight: 600,
+          letterSpacing: '0.04em',
+        }}
+      >
+        {i18n.resolvedLanguage === 'en' ? 'ES' : 'EN'}
+      </button>
+      <a href="#work" onClick={() => setMenuOpen(false)}>{t('nav.work')}</a>
+      <a href="#pricing" onClick={() => setMenuOpen(false)}>{t('nav.pricing')}</a>
+      <a href="#contact" onClick={() => setMenuOpen(false)}>{t('nav.contact')}</a>
+    </div>
+  </div>
+</nav>
 
       <main id="main-content">
 
@@ -164,19 +178,17 @@ export default function Home() {
 
       </main>
 
-      <footer id="contact" aria-labelledby="contact-title">
-        <div className="container fade-up">
-          <span className="section-label">{t('contact.label')}</span>
-          <h2 id="contact-title" className="section-title">{t('contact.title')}</h2>
-          <p className="section-subtitle">{t('contact.subtitle')}</p>
-          <a className="button" href="mailto:hello@yourstudio.com">
-            {t('contact.cta')}
-          </a>
-          <p className="footer-copy">
-            &copy; {new Date().getFullYear()} ByteClub Dev. {t('contact.copy')}
-          </p>
-        </div>
-      </footer>
+<footer id="contact" aria-labelledby="contact-title">
+  <div className="container fade-up">
+    <span className="section-label">{t('contact.label')}</span>
+    <h2 id="contact-title" className="section-title">{t('contact.title')}</h2>
+    <p className="section-subtitle">{t('contact.subtitle')}</p>
+    <ContactForm />
+    <p className="footer-copy">
+      &copy; {new Date().getFullYear()} ByteClub Dev. {t('contact.copy')}
+    </p>
+  </div>
+</footer>
     </>
   )
 }

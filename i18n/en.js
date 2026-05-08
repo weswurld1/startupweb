@@ -6,7 +6,8 @@ const en = {
       title: "We build digital solutions that",
       emphasis: "expand",
       title2: "your business.",
-      subtitle: "Premium digital solutions for local and international brands that want to stand out and convert online.",
+      subtitle:
+        "Premium digital solutions for local and international brands that want to stand out and convert online.",
       cta: "Start a project",
     },
     tech: { title: "Technologies we work with" },
@@ -34,11 +35,26 @@ const en = {
     contact: {
       label: "Contact",
       title: "Let's work together.",
-      subtitle: "Tell us about your project and we'll get back to you within 24 hours.",
+      subtitle:
+        "Tell us about your project and we'll get back to you within 24 hours.",
       cta: "Contact us",
       copy: "All rights reserved.",
     },
-  }
-}
+    form: {
+      name: "Name",
+      namePlaceholder: "John Doe",
+      email: "Email",
+      emailPlaceholder: "john@example.com",
+      service: "Service",
+      servicePlaceholder: "Select a service",
+      message: "Message",
+      messagePlaceholder: "Tell us about your project...",
+      submit: "Send message",
+      sending: "Sending...",
+      success: "Message sent! We'll get back to you within 24 hours.",
+      error: "Something went wrong. Please try again.",
+    },
+  },
+};
 
-export default en
+export default en;
