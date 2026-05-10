@@ -126,8 +126,8 @@ export default function ParticleBackground() {
   height: "100%",
   pointerEvents: "none",
   zIndex: 0,
-  WebkitMaskImage: "linear-gradient(to bottom, black 60%, transparent 100%)",
-  maskImage: "linear-gradient(to bottom, black 60%, transparent 100%)",
+  WebkitMaskImage: "linear-gradient(to bottom, black 55%, transparent 85%)",
+  maskImage: "linear-gradient(to bottom, black 55%, transparent 85%)",
 }}
       aria-hidden="true"
     />
