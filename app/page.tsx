@@ -6,11 +6,13 @@ import { useState } from "react";
 import "@/i18n";
 import { useTranslation } from "react-i18next";
 import TechGrid from '@/app/components/TechGrid'
+import ParticleBackground from "@/app/components/ParticleBackground";
 export default function Home() {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
+      <ParticleBackground />
       <a href="#main-content" className="skip-link">
         {t("skip")}
       </a>
