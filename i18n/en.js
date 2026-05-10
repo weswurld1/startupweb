@@ -72,6 +72,12 @@ const en = {
       success: "Message sent! We'll get back to you within 24 hours.",
       error: "Something went wrong. Please try again.",
     },
+       tech: {
+      title: "Technologies we work with",
+      frontend: "Frontend",
+      backend: "Backend",
+      devops: "DevOps",
+    },
   },
 };
 

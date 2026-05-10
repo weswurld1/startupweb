@@ -5,15 +5,7 @@ import ContactForm from "@/app/components/ContactForm";
 import { useState } from "react";
 import "@/i18n";
 import { useTranslation } from "react-i18next";
-import {
-  SiVercel,
-  SiSupabase,
-  SiHtml5,
-  SiJavascript,
-  SiCss,
-  SiPython,
-} from "react-icons/si";
-
+import TechGrid from '@/app/components/TechGrid'
 export default function Home() {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -263,55 +255,11 @@ export default function Home() {
           </div>
         </section>
 
+          {/* TECH STACK */}
         <section className="tech-stack" aria-labelledby="tech-title">
           <div className="container">
-            <h2 id="tech-title">{t("tech.title")}</h2>
-            <div className="tech-grid" role="list">
-              <article className="tech-card" role="listitem">
-                <SiVercel aria-hidden="true" className="tech-icon" />
-                <span>Vercel</span>
-              </article>
-              <article className="tech-card" role="listitem">
-                <SiSupabase
-                  aria-hidden="true"
-                  className="tech-icon"
-                  style={{ color: "#3ECF8E" }}
-                />
-                <span>Supabase</span>
-              </article>
-              <article className="tech-card" role="listitem">
-                <SiHtml5
-                  aria-hidden="true"
-                  className="tech-icon"
-                  style={{ color: "#E34F26" }}
-                />
-                <span>HTML</span>
-              </article>
-              <article className="tech-card" role="listitem">
-                <SiJavascript
-                  aria-hidden="true"
-                  className="tech-icon"
-                  style={{ color: "#F7DF1E" }}
-                />
-                <span>JavaScript</span>
-              </article>
-              <article className="tech-card" role="listitem">
-                <SiCss
-                  aria-hidden="true"
-                  className="tech-icon"
-                  style={{ color: "#1572B6" }}
-                />
-                <span>CSS</span>
-              </article>
-              <article className="tech-card" role="listitem">
-                <SiPython
-                  aria-hidden="true"
-                  className="tech-icon"
-                  style={{ color: "#3776AB" }}
-                />
-                <span>Python</span>
-              </article>
-            </div>
+            <FadeUp><h2 id="tech-title">{t("tech.title")}</h2></FadeUp>
+            <FadeUp delay={150}><TechGrid /></FadeUp>
           </div>
         </section>
       </main>
