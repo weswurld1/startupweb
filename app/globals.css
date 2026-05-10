@@ -173,17 +173,7 @@ section {
   overflow: hidden;
 }
 
-  /* glow pulls right, fades left where text lives */
-  -webkit-mask-image:
-    radial-gradient(ellipse at 78% 50%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 70%),
-    linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 28%, rgba(0,0,0,1) 55%);
-  -webkit-mask-composite: source-in;
-  mask-image:
-    radial-gradient(ellipse at 78% 50%, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0) 70%),
-    linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 28%, rgba(0,0,0,1) 55%);
-  mask-composite: intersect;
- 
-/* Accent glow bloom — add as .hero::after */
+/* Accent glow bloom */
 .hero::after {
   content: "";
   position: absolute;
