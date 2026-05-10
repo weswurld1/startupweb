@@ -120,7 +120,7 @@ export default function ParticleBackground() {
     <canvas
       ref={canvasRef}
       style={{
-  position: "fixed",
+  position: "absolute",
   inset: 0,
   width: "100%",
   height: "100%",
