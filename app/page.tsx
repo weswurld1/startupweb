@@ -12,13 +12,12 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
-      <ParticleBackground />
       <a href="#main-content" className="skip-link">
         {t("skip")}
       </a>
       <nav className="nav" role="navigation" aria-label="Main navigation">
         <div className="container nav-inner">
-          <a
+          
             href="/"
             className="logo"
             aria-label="ByteClub Dev home"
@@ -79,6 +78,7 @@ export default function Home() {
 
       <main id="main-content">
         <section className="hero" aria-labelledby="hero-title">
+          <ParticleBackground />
           <div className="container FadeUp">
             <h1 id="hero-title">
               {t("hero.title")}
@@ -171,7 +171,7 @@ export default function Home() {
                 />
                 <h3>Soler CRC</h3>
                 <p>{t("work.soler")}</p>
-                <a
+                
                   href="https://solercrc.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -193,7 +193,7 @@ export default function Home() {
                 />
                 <h3>Awkward Self Consciousness</h3>
                 <p>{t("work.awkward")}</p>
-                <a
+                
                   href="https://awkwardself-consciousness.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -215,7 +215,7 @@ export default function Home() {
                 />
                 <h3>VitalCare CR</h3>
                 <p>{t("work.vitalcare")}</p>
-                <a
+                
                   href="https://vitalcarecr.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -257,7 +257,7 @@ export default function Home() {
           </div>
         </section>
 
-          {/* TECH STACK */}
+        {/* TECH STACK */}
         <section className="tech-stack" aria-labelledby="tech-title">
           <div className="container">
             <FadeUp><h2 id="tech-title">{t("tech.title")}</h2></FadeUp>
